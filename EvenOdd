@@ -1,0 +1,12 @@
+public class EO {
+    public static void evenodd(Integer n){
+        if(Math.mod(n,2)==0){
+            System.debug('even');
+        }
+        else{
+            System.debug('odd');
+        }
+        
+    }
+
+}
