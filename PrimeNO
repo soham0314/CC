@@ -1,0 +1,16 @@
+public class Primeno {
+    public static void findprimenumber(Integer ll, Integer ul) {
+        for (Integer i = ll; i <= ul; i++) {
+            Boolean isprime = true;
+            for (Integer j = 2; j < Math.sqrt(i); j++) {
+                if (Math.mod(i, j) == 0) {
+                    isprime = false;
+                    break;
+                }
+            }
+            if (isprime && i > 1) {
+                System.out.println(i);
+            }
+        }
+    }
+}
