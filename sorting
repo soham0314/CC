@@ -1,0 +1,18 @@
+public class Sor {
+    public static void sorting(){
+        Integer[] a=new Integer[]{5,3,4,2};
+            Integer n=a.size();
+        for(Integer i=0;i<n-1;i++){
+            for(Integer j=0;j<n-1-i;j++){
+                if(a[j]>a[j+1]){
+                    Integer temp=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=temp;
+                }
+            }
+        }
+        
+        System.debug(a);
+    }
+
+}
